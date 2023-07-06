@@ -1,0 +1,59 @@
+body{
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)),
+      var(--black) url(https://source.unsplash.com/RF4p4rTM-2s/1280x720) no-repeat
+        center fixed;
+    background-size: cover;
+}
+
+:root {
+    --dark-cyan: #02b1c8;
+    --cyan: #00e1ff;
+    --green: #7ffa67;
+    --white: #fcfcfc;
+    --black: #111;
+    --darkest-grey: #151515;
+    --dark-grey: #222;
+    --grey: #333;
+  }
+
+#header-id{
+    margin: auto;
+    text-align: center;
+    font-size: xx-large;
+    background-image: linear-gradient(90deg, rgba(87,75,205,1) 0%, rgba(41,153,173,1) 35%, rgba(65,233,117,1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+#searchName{
+    
+}
+
+
+#footer{
+    text-align: center;
+    color: aliceblue;
+    background-color: blueviolet;
+}
+
+#character-list{
+    /* float: left; */
+    color: green;
+    width: 25%;
+    text-align: center;
+}
+
+#character-details{
+    color: blue;
+    text-align: center;
+}
+
+#outerDiv{
+    display: flex;
+    justify-content: space-between;
+    /* height: 50%; */
+}
+
