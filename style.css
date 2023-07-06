@@ -28,11 +28,6 @@ body{
     -moz-text-fill-color: transparent;
 }
 
-#searchName{
-    
-}
-
-
 #footer{
     text-align: center;
     color: aliceblue;
@@ -57,3 +52,6 @@ body{
     /* height: 50%; */
 }
 
+#displayedDetailsChild{
+    color: pink;
+}
