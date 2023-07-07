@@ -44,6 +44,7 @@ body{
 #character-details{
     color: blue;
     text-align: center;
+    flex-basis: 1000px;
 }
 
 #outerDiv{

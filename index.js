@@ -1,5 +1,6 @@
 //loads the content once the page fully loads 
-document.addEventListener('DOMContentLoaded', function(){
+document.addEventListener('DOMContentLoaded', function(e){
+    e.preventDefault();
     getCharacters();
 })
 
@@ -49,11 +50,18 @@ function displayCharacterDetails(character){
         displayDivMain.classList = 'displayedDetailsMain';
         //displayDivMain.innerHTML = '<p>paragh<p>';
 
+        //displayImage
+        let displayImage = document.getElementById('displayImage');
+        displayImage.innerText = ;
+        displayImage.src = character.image
+        displayDivMain.appendChild(displayImage)
+
+
         //displays name 
         let displayDivName = document.createElement('div');
             displayDivName.classList = 'displayedDetailsChild';
             displayDivName.id = 'displayedDetailsName';
-            displayDivName.innerText = `${character.name}`
+            displayDivName.innerText = `Name: ${character.name}`
             displayDivMain.appendChild(displayDivName);
             console.log(displayDivName);
 
@@ -62,14 +70,14 @@ function displayCharacterDetails(character){
             let displayDivStatus = document.createElement('div');
                 displayDivStatus.classList = 'displayedDetailsChild';
                 displayDivStatus.id = 'displayedDetailsStatus';
-                displayDivStatus.innerText = `${character.status}`
+                displayDivStatus.innerText = `Status: ${character.status}`
                 displayDivMain.appendChild(displayDivStatus);
             
         //displays type 
             let displayDivType = document.createElement('div');
                 displayDivType.classList = 'displayedDetailsChild';
                 displayDivType.id = 'displayedDetailsType';
-                displayDivType.innerText = `${character.type}`
+                displayDivType.innerText = `Type: ${character.type}`
                 displayDivMain.appendChild(displayDivType);  
 
 
@@ -77,27 +85,88 @@ function displayCharacterDetails(character){
             let displayDivSpecies = document.createElement('div');
                 displayDivSpecies.classList = 'displayedDetailsChild';
                 displayDivSpecies.id = 'displayedDetailsSpecies';
-                displayDivSpecies.innerText = `${character.species}`
+                displayDivSpecies.innerText = `Species: ${character.species}`
                 displayDivMain.appendChild(displayDivSpecies);  
 
         //displays gender 
             let displayDivGender = document.createElement('div');
                 displayDivGender.classList = 'displayedDetailsChild';
                 displayDivGender.id = 'displayedDetailsGender';
-                displayDivGender.innerText = `${character.gender}`
+                displayDivGender.innerText = `Gender: ${character.gender}`
                 displayDivMain.appendChild(displayDivGender);
 
         //displays origin 
             let displayDivOrigin = document.createElement('div');
                 displayDivOrigin.classList = 'displayedDetailsChild';
                 displayDivOrigin.id = 'displayedDetailsOrigin';
-                displayDivOrigin.innerText = `${character.origin}`
+                displayDivOrigin.innerText = `Origin: ${character.origin}`
                 displayDivMain.appendChild(displayDivOrigin); 
 
     characaterDetails.appendChild(displayDivMain)
     console.log(character)
 };
 
+
+//POST & DELETE
+
+//globalVatiables for addCharacter
+let addForm = document.getElementById('add-character'); 
+let addFormData = document.getElementsByClassName('inputFormData');
+let addButton = document.getElementById('addButton');
+
+
+//adding a submit event to the form 
+addForm.addEventListener('submit', submitForm) 
+
+function submitForm(e) {
+    e.preventDefault();
+
+    let nameInput = document.getElementById('name').value
+    let statusInput = document.getElementById('status').value
+    let speciesInput = document.getElementById('species').value
+    let typeInput = document.getElementById('type').value
+    let genderInput = document.getElementsByClassName('gender').value
+    let originInput = document.getElementById('origin').value
+    let urlInput = document.getElementById('imageurl').value
+
+    console.log(nameInput)
+    console.log(statusInput)
+    console.log(speciesInput)
+    console.log(typeInput)
+    console.log(genderInput)
+    console.log(originInput)
+    console.log(urlInput)
+
+
+    // let formData = {
+    //     name: nameInput,
+    //     status: statusInput,
+    //     species: ,
+    //     type: ,
+    //     gender: ,
+    //     origin: ,
+    //     image: 
+    // }
+
+    if(nameInput.value === ""){
+        alert("Ensure you input a value in each field!");
+    }
+    else{
+        //console.log(nameInput.value)
+    e.preventDefault();
+        fetch('http://localhost:3000/characters', {
+            method:'POST',
+            headers: {
+            'Content-Type' : 'application/json',
+                },
+            body: JSON.stringify(formData)
+            })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+     })
+}
+}
 
 
 

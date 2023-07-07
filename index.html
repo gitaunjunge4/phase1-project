@@ -29,21 +29,21 @@
 
         <div class="homepageSection" id="character-details">
             <p>CHARACTER DETAILS</p>
-            <div>
-                <img id="displayImage"/>
+            <div id="displayImage">
+                
             </div>
         </div>
     </div>
-    <!-- <div id="form-div">
-        <div class="homepageDiv" id="add-character">
-            <form>
+    <div id="form-div">
+        <div class="homepageDiv" >
+            <form id="add-character">
                 <p style="color:red;">ADD CHARACTER</p>
-                <label for="name" style="color:red;">NAME: <input type="text" id="name" name="name" placeholder="name to add"></label>
+                <label for="name" style="color:red;">NAME: <input type="text" id="name" name="name" placeholder="name to add" class="inputFormData"></label>
 
                 <br><br>
 
                 <label for="status" style="color:red;">STATUS:</label>
-                <select id="status" name="status">
+                <select id="status" name="status" class="inputFormData">
                   <option value="alive">Alive</option>
                   <option value="dead">Dead</option>
                   <option value="unknown">Unknown</option>
@@ -51,34 +51,51 @@
 
                 <br><br>
 
-                <label style="color:red;">SPECIES: <input type="text" id="species" name="species" placeholder="human" ></label>
+                <label style="color:red;">SPECIES: <input type="text" id="species" name="species" placeholder="human" class="inputFormData"></label>
 
                 <br><br>
 
-                <label style="color:red;">TYPE: <input type="text" id="type" name="type" placeholder="human with antennae"></label>
+                <label style="color:red;">TYPE: <input type="text" id="type" name="type" placeholder="human with antennae" class="inputFormData"></label>
 
                 <br><br>
 
                 <label style="color:red;">GENDER: 
-                    Male <input type="radio" id="male-gender" name="gender"></label>
-                    Female <input type="radio" id="female-gender" name="gender"></label>
+                    Male <input type="radio" id="male-gender"  name="gender" class="inputFormData"></label>
+                <label style="color:red;"> Female</label>
+                    <input type="radio" id="female-gender" class="gender" name="gender" class="inputFormData"></label>
+                <label style="color:red;"> Unknown</label>
+                    <input type="radio" id="unknown-gender" class="gender" name="gender" class="inputFormData"></label>
+
                 <br><br>
 
-                <label style="color:red;">ORIGIN: <input type="text" id="name" name="name" placeholder="Earth (C-137)"></label>
+                <label style="color:red;">ORIGIN: <input type="text" id="origin" name="name" placeholder="Earth (C-137)" class="inputFormData"></label>
+
+                <br><br>
+
+                <label style="color:red;">IMAGE URL: <input type="text" id="imageurl" name="image" placeholder="image url" class="inputFormData"></label>
+                <br>
+                <br>
+
+                <input id="addButton" type="submit" value="Add Character">
 
             </form>
         </div>
+
+        <br><br><br><br><br>
         
         <div class="homepageDiv" id="delete-character">
             <p style="color:red;">DELETE CHARACTER</p>
             <label style="color:red;">Character Name: <input type="text" id="deleteCharacter" name="deleteCharacter" placeholder="name to delete"></label>
-        </div> -->
+        </div>
     </div>
-    <!-- <div id="footer">
+
+    <br><br><br><br><br>
+
+    <div id="footer">
         <p>ALL RIGHTS RESERVED 2023</p>
          <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/09/Rick--Morty-Cast-and-Character-Guide-feature.jpg"/>
         <p>AUTHOR - gitz</p><br>
-    </div> -->
+    </div>
     </main>
     <script src="./index.js"></script>
 </body>
