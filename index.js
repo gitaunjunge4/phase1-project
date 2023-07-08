@@ -174,4 +174,12 @@ function submitForm(e) {
 
 //DELETE FEATURE FOR THE DELETE CHARACTER FORM
 let deleteForm = document.getElementById('delete-character')
+let deleteButton = document.getElementById('deleteButton')
 
+//adding an eventListner for the click event to the deleteForm
+deleteForm.addEventListener('click', deleteCharacter)
+
+//deleteCharacter function
+function deleteCharacter(){
+    fetch
+}
