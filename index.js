@@ -52,9 +52,9 @@ function displayCharacterDetails(character){
 
         //displayImage
         let displayImage = document.createElement('img');
-        displayImage.id = 'displayedImaged'
-        displayImage.src = character.image
-        displayDivMain.appendChild(displayImage)
+            displayImage.id = 'displayedImaged'
+            displayImage.src = character.image
+            displayDivMain.appendChild(displayImage)
 
 
         //displays name 
@@ -147,7 +147,6 @@ function submitForm(e) {
         origin: originInput,
         image: urlInput,
     }
-    console.log(formData)
 
     if(nameInput.value === ""){
         alert("Ensure you input a value in each field!");
