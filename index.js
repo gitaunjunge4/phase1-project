@@ -153,6 +153,7 @@ function submitForm(e) {
     }else if (urlInput.value === ""){
         alert("Ensure you input a valid URL in the Image URL field!");
     }
+
     //once all the requirements are met the data is posted 
     else{
     e.preventDefault();
@@ -169,3 +170,8 @@ function submitForm(e) {
      })
 }
 }
+
+
+//DELETE FEATURE FOR THE DELETE CHARACTER FORM
+let deleteForm = document.getElementById('delete-character')
+

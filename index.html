@@ -88,8 +88,8 @@
 
                 <!-- ADD IMAGE URL -->
                 <label style="color:red;">IMAGE URL: <input type="text" id="imageurl" name="image" placeholder="image url" class="inputFormData"></label>
-                <br>
-                <br>
+                
+                <br><br>
 
                 <input id="addButton" type="submit" value="Add Character">
 
@@ -99,13 +99,13 @@
         <br><br><br><br><br>
         
         <!-- DELETE CHARACTER FORM -->
-        <div class="homepageDiv" id="delete-character">
+        <div class="homepageDiv" >
             <p style="color:red;">DELETE CHARACTER</p>
-            <label style="color:red;">Character Name: <input type="text" id="deleteCharacter" name="deleteCharacter" placeholder="name to delete"></label>
-
-            <br><br>
-            
-            <input id="deleteButton" type="submit" value="Delete Character">
+                <form id="delete-character">
+                    <label style="color:red;">Character Name: <input type="text" id="deleteCharacter" name="deleteCharacter" placeholder="name to delete"></label>
+                 &nbsp &nbsp &nbsp
+                    <input id="deleteButton" type="submit" value="Delete Character">
+                </form>
         </div>
     </div>
 
