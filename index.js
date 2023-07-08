@@ -144,7 +144,7 @@ function submitForm(e) {
         species: speciesInput ,
         type: typeInput,
         gender: genderInput,
-        origin: genderInput,
+        origin: originInput,
         image: urlInput,
     }
     console.log(formData)
