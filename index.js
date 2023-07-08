@@ -51,8 +51,8 @@ function displayCharacterDetails(character){
         //displayDivMain.innerHTML = '<p>paragh<p>';
 
         //displayImage
-        let displayImage = document.getElementById('displayImage');
-        displayImage.innerText = ;
+        let displayImage = document.createElement('img');
+        displayImage.id = 'displayedImaged'
         displayImage.src = character.image
         displayDivMain.appendChild(displayImage)
 
@@ -134,19 +134,20 @@ function submitForm(e) {
     console.log(speciesInput)
     console.log(typeInput)
     console.log(genderInput)
-    console.log(originInput)
+    console.log(genderInput)
     console.log(urlInput)
 
 
-    // let formData = {
-    //     name: nameInput,
-    //     status: statusInput,
-    //     species: ,
-    //     type: ,
-    //     gender: ,
-    //     origin: ,
-    //     image: 
-    // }
+    let formData = {
+        name: nameInput,
+        status: statusInput,
+        species: speciesInput ,
+        type: typeInput,
+        gender: genderInput,
+        origin: genderInput,
+        image: urlInput,
+    }
+    console.log(formData)
 
     if(nameInput.value === ""){
         alert("Ensure you input a value in each field!");

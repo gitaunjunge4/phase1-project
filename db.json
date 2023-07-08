@@ -199,6 +199,30 @@
       "gender": "Male",
       "origin": "unknown",
       "image": "https://rickandmortyapi.com/api/character/avatar/20.jpeg"
+    },
+    {
+      "name": "junir",
+      "status": "alive",
+      "species": "sdf",
+      "type": "s",
+      "image": "scc",
+      "id": 21
+    },
+    {
+      "name": "junir",
+      "status": "alive",
+      "species": "sdf",
+      "type": "s",
+      "image": "zd",
+      "id": 22
+    },
+    {
+      "name": "junir",
+      "status": "alive",
+      "species": "sdf",
+      "type": "s",
+      "image": "scc",
+      "id": 23
     }
   ]
 }
