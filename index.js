@@ -138,11 +138,23 @@ function submitForm(e) {
     };
 
     //ensures that each input field is filled up with valid data
-    if(nameInput.value === ""){
-        alert("Ensure you input a value in each field!");
+    if(nameInput === ""){
+        alert("Ensure you input a valid name in the name field!");
+    }else if (statusInput === ""){
+        alert("Ensure you input a valid status in the status field!");
+    }else if (speciesInput.value === ""){
+        alert("Ensure you input a valid species in the species field!");
+    }else if (typeInput.value === ""){
+        alert("Ensure you input a valid type in the type field!");
+    }else if (genderInput.value === ""){
+        alert("Ensure you input a valid gender in the gender field!");
+    }else if (originInput.value === ""){
+        alert("Ensure you input a valid origin in the origin field!");
+    }else if (urlInput.value === ""){
+        alert("Ensure you input a valid URL in the Image URL field!");
     }
+    //once all the requirements are met the data is posted 
     else{
-        //console.log(nameInput.value)
     e.preventDefault();
         fetch('http://localhost:3000/characters', {
             method:'POST',
@@ -157,11 +169,3 @@ function submitForm(e) {
      })
 }
 }
-
-
-
-
-
-
-
-
