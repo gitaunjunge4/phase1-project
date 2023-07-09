@@ -69,7 +69,7 @@ body{
 
 #displayedImage{
     border-radius: 20px;
-    height: 400px;
+    height: 50%;
     width: 50%;
 }
 
@@ -82,18 +82,15 @@ body{
     text-shadow: 0.02em 0.02em 0.02em var(--green), -0.02em -0.02em 0.02em var(--green), 0 0 0.2em var(--green);
 }
 
-
-.characterName:hover{
-    background-color: #00e1ff;
-}
-
 #sentence{
     color: brown;
 }
 
+/* adding the hover feature to the character names */
 .characterName{
     font-family: "Source Sans Pro", sans-serif;
     font-weight: 600;
+    font-size: x-large;
     background-image: linear-gradient(
       to right,
       #54b3d6,
@@ -102,30 +99,27 @@ body{
     );
     background-size: 200% 100%;
     background-position: -100%;
-    /* display: inline-block; */
-    padding: 5px 0;
-    position: relative;
+    padding: 5px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: all 0.3s ease-in-out;
-}
+};
   
 .characterName:before {
     content: '';
     background: #54b3d6;
-    /* display: block; 
-    position: absolute;  */
+    position: absolute;
     bottom: -3px;
     left: 0;
     width: 0;
     height: 3px;
     transition: all 0.3s ease-in-out;
-  }
+}
   
 .characterName:hover {
    background-position: 0;
-  }
+}
   
 .characterName:hover::before {
     width:100%;
-  }
+}

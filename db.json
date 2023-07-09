@@ -208,6 +208,15 @@
       "origin": "earth",
       "image": "https://preview.redd.it/mr-nimbus-commands-you-to-give-him-your-best-trivia-v0-vnhe1qn62u2a1.jpg?width=640&crop=smart&auto=webp&s=0607dfc755d3fb3a883d86e6a665c3a5d448fbee",
       "id": 21
+    },
+    {
+      "name": "Jaguar",
+      "status": "alive",
+      "species": "human",
+      "type": "human serial killer ",
+      "origin": "earth ",
+      "image": "https://images.hobbydb.com/processed_uploads/subject_photo/subject_photo/image/39223/1524780561-14769-1276/rm303-3_large.jpg",
+      "id": 22
     }
   ]
 }
