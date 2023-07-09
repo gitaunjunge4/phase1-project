@@ -82,10 +82,6 @@ body{
     text-shadow: 0.02em 0.02em 0.02em var(--green), -0.02em -0.02em 0.02em var(--green), 0 0 0.2em var(--green);
 }
 
-#sentence{
-    color: brown;
-}
-
 /* adding the hover feature to the character names */
 .characterName{
     font-family: "Source Sans Pro", sans-serif;
@@ -122,4 +118,20 @@ body{
   
 .characterName:hover::before {
     width:100%;
+}
+
+/* styling the addButton */
+#addButton{
+    text-align: center;
+    box-shadow:  0 0 10px var(--green), 
+    0 0 25px var(--green) 0 0 50px var(--green),
+    0 0 100px var(--green), 0 0 20px var(--green);
+    font-weight: 500;
+    background-color: #7ffa67;
+    padding: 10px;
+    display: inline-block;
+}
+#addButton:hover{
+    box-shadow: 0 0 10px var(--green), 
+    0 0 25px var(--green);
 }

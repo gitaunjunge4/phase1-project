@@ -202,7 +202,7 @@
     },
     {
       "name": "Mr. Nimbus",
-      "status": "alive",
+      "status": "Alive",
       "species": "Alien",
       "type": "Alien King of the ocean",
       "origin": "earth",
@@ -211,10 +211,10 @@
     },
     {
       "name": "Jaguar",
-      "status": "alive",
-      "species": "human",
-      "type": "human serial killer ",
-      "origin": "earth ",
+      "status": "Alive",
+      "species": "Human",
+      "type": "Human serial killer ",
+      "origin": "Earth ",
       "image": "https://images.hobbydb.com/processed_uploads/subject_photo/subject_photo/image/39223/1524780561-14769-1276/rm303-3_large.jpg",
       "id": 22
     }

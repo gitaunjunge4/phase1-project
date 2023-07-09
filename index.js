@@ -42,7 +42,7 @@ function fetchCharacterDetails(character){
 //function to display the details now
 function displayCharacterDetails(character){
     let characaterDetails = document.getElementById('character-details');
-    characaterDetails.innerHTML = "<p id= 'sentence'>You selected:<p>";
+    characaterDetails.innerHTML = "<p id= 'sentence'>You selected!<p>";
 
         let displayDivMain = document.createElement('div');
         displayDivMain.classList = 'displayedDetailsMain';
