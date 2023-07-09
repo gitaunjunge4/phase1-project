@@ -2,31 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content=  "width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet">
     <title>Rick and Morty</title>
 </head>
 <body>
     <!-- PAGE HEADER -->
     <header id="header-id">
-        <h1>RICK AND MORTY CHARACTER VIEWER</h1>
+        <h1 id="rickandmorty">RICK AND MORTY</h1>
+        <p id="p1Header"> CHARACTER VIEWER</p>
     </header>
     <main>
-        <div>
-            <!-- SEARCH CHARACTER INPUT(not so sure about it since charcters are quite few) -->
+        <!-- <div>
+             SEARCH CHARACTER INPUT(not so sure about it since charcters are quite few)
             <form>
                 <label for="characterName" style="color:red;" id="searchName">Character Name:</label><br>
                 <input type="text" id="inputName" placeholder="character name">
                 <input type="submit" value="Search Me">
             </form>
-        </div>
+        </div> -->
         
         <br>
 
         <!-- CHARACTER NAMES LIST DIV(L) -->
         <div id="outerDiv">
         <div class="homepageSection" id="character-list">
-            <p>CHARACTER LIST</p>
+            <p id="favCharacter">Favourite characters</p>
+            <div id="nameContent">
+
+            </div>  
         </div>
 
         <!-- CHARACTER DETAILS DIV(R) -->
@@ -37,7 +42,6 @@
             </div>
         </div>
     </div>
-
 
     <div id="form-div">
         <div class="homepageDiv" >
@@ -111,11 +115,11 @@
 
     <br><br><br><br><br>
 
-    <div id="footer">
+    <!-- <div id="footer">
         <p>ALL RIGHTS RESERVED 2023</p>
          <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/09/Rick--Morty-Cast-and-Character-Guide-feature.jpg"/>
         <p>AUTHOR - gitz</p><br>
-    </div>
+    </div> -->
     </main>
     <script src="./index.js"></script>
 </body>

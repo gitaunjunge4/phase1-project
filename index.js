@@ -16,12 +16,13 @@ function getCharacters(){
 //function for displaying the character names from the server on to the html
 function getCharacterNames(characterName){
     let characterList = document.getElementById('character-list');
+    let nameContent = document.getElementById('nameContent')
 
     characterName.forEach(characterName =>{
         let nameDiv = document.createElement('div');
         nameDiv.classList ="characterName"
         nameDiv.innerText = `-${characterName.name}`;
-        characterList.appendChild(nameDiv);
+        nameContent.appendChild(nameDiv);
 
         //has an event listener for a click event that calls on the funciton that displays character names
         nameDiv.addEventListener('click', () =>{
@@ -37,32 +38,29 @@ function fetchCharacterDetails(character){
     .then(data =>{
         displayCharacterDetails(data)
     })
-}
+};
 
 //function to display the details now
 function displayCharacterDetails(character){
     let characaterDetails = document.getElementById('character-details');
-    characaterDetails.innerHTML = "<p id= 'sentence' >This character is:<p>";
+    characaterDetails.innerHTML = "<p id= 'sentence'>You selected:<p>";
 
         let displayDivMain = document.createElement('div');
         displayDivMain.classList = 'displayedDetailsMain';
 
         //displays Character Image
         let displayImage = document.createElement('img');
-            displayImage.id = 'displayedImaged'
+            displayImage.id = 'displayedImage'
             displayImage.src = character.image
             displayDivMain.appendChild(displayImage)
-
 
         //displays Character name 
         let displayDivName = document.createElement('div');
             displayDivName.classList = 'displayedDetailsChild';
             displayDivName.id = 'displayedDetailsName';
-            displayDivName.innerText = `Name: ${character.name}`
+            displayDivName.innerText = `Name: ${character.name}`;
             displayDivMain.appendChild(displayDivName);
-            console.log(displayDivName);
 
-        
         //displays Character status 
             let displayDivStatus = document.createElement('div');
                 displayDivStatus.classList = 'displayedDetailsChild';
@@ -76,7 +74,6 @@ function displayCharacterDetails(character){
                 displayDivType.id = 'displayedDetailsType';
                 displayDivType.innerText = `Type: ${character.type}`
                 displayDivMain.appendChild(displayDivType);  
-
 
         //displays Character species 
             let displayDivSpecies = document.createElement('div');
@@ -111,20 +108,20 @@ let addFormData = document.getElementsByClassName('inputFormData');
 let addButton = document.getElementById('addButton');
 
 //adding a submit event to the form 
-addForm.addEventListener('submit', submitForm) 
+addForm.addEventListener('submit', submitForm);
 
 //fucntion for the submit event 
 function submitForm(e) {
     e.preventDefault();
 
     //obtaining the ID's and values of the inputs on the add character form 
-    let nameInput = document.getElementById('name').value
-    let statusInput = document.getElementById('status').value
-    let speciesInput = document.getElementById('species').value
-    let typeInput = document.getElementById('type').value
-    let genderInput = document.getElementsByClassName('gender').value
-    let originInput = document.getElementById('origin').value
-    let urlInput = document.getElementById('imageurl').value
+    let nameInput = document.getElementById('name').value;
+    let statusInput = document.getElementById('status').value;
+    let speciesInput = document.getElementById('species').value;
+    let typeInput = document.getElementById('type').value;
+    let genderInput = document.getElementsByClassName('gender').value;
+    let originInput = document.getElementById('origin').value;
+    let urlInput = document.getElementById('imageurl').value;
 
     //putting the values in an object format to enable it to be posted to the server as JSON
     let formData = {
@@ -142,15 +139,13 @@ function submitForm(e) {
         alert("Ensure you input a valid name in the name field!");
     }else if (statusInput === ""){
         alert("Ensure you input a valid status in the status field!");
-    }else if (speciesInput.value === ""){
+    }else if (speciesInput === ""){
         alert("Ensure you input a valid species in the species field!");
-    }else if (typeInput.value === ""){
+    }else if (typeInput === ""){
         alert("Ensure you input a valid type in the type field!");
-    }else if (genderInput.value === ""){
-        alert("Ensure you input a valid gender in the gender field!");
-    }else if (originInput.value === ""){
+    }else if (originInput === ""){
         alert("Ensure you input a valid origin in the origin field!");
-    }else if (urlInput.value === ""){
+    }else if (urlInput === ""){
         alert("Ensure you input a valid URL in the Image URL field!");
     }
 
@@ -167,19 +162,19 @@ function submitForm(e) {
         .then(response => response.json())
         .then(data => {
             console.log(data);
-     })
+     });
 }
-}
+};
 
 
-//DELETE FEATURE FOR THE DELETE CHARACTER FORM
-let deleteForm = document.getElementById('delete-character')
-let deleteButton = document.getElementById('deleteButton')
+// //DELETE FEATURE FOR THE DELETE CHARACTER FORM
+// let deleteForm = document.getElementById('delete-character')
+// let deleteButton = document.getElementById('deleteButton')
 
-//adding an eventListner for the click event to the deleteForm
-deleteForm.addEventListener('click', deleteCharacter)
+// //adding an eventListner for the click event to the deleteForm
+// deleteForm.addEventListener('submit', deleteCharacter)
 
-//deleteCharacter function
-function deleteCharacter(){
-    fetch
-}
+// //deleteCharacter function
+// function deleteCharacter(e){
+// }
+

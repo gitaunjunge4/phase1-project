@@ -199,6 +199,15 @@
       "gender": "Male",
       "origin": "unknown",
       "image": "https://rickandmortyapi.com/api/character/avatar/20.jpeg"
+    },
+    {
+      "name": "Mr. Nimbus",
+      "status": "alive",
+      "species": "Alien",
+      "type": "Alien King of the ocean",
+      "origin": "earth",
+      "image": "https://preview.redd.it/mr-nimbus-commands-you-to-give-him-your-best-trivia-v0-vnhe1qn62u2a1.jpg?width=640&crop=smart&auto=webp&s=0607dfc755d3fb3a883d86e6a665c3a5d448fbee",
+      "id": 21
     }
   ]
 }
