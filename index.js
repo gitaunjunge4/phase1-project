@@ -15,7 +15,6 @@ function getCharacters(){
 
 //function for displaying the character names from the server on to the html
 function getCharacterNames(characterName){
-    let characterList = document.getElementById('character-list');
     let nameContent = document.getElementById('nameContent')
 
     characterName.forEach(characterName =>{
