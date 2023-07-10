@@ -142,3 +142,13 @@ body{
     box-shadow: 0 0 10px var(--green), 
     0 0 25px var(--green);
 }
+
+/* styling the input */
+.inputFormData{
+    border: 2px solid var(--green);
+    background-color: #111;
+    color: white;
+    border-radius: 30px;
+    padding: 10px;
+    o
+}

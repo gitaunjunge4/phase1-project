@@ -217,6 +217,15 @@
       "origin": "Earth ",
       "image": "https://images.hobbydb.com/processed_uploads/subject_photo/subject_photo/image/39223/1524780561-14769-1276/rm303-3_large.jpg",
       "id": 22
+    },
+    {
+      "name": "Dr  Wong",
+      "status": "alive",
+      "species": "Human",
+      "type": "human therapist",
+      "origin": "earth",
+      "image": "https://preview.redd.it/the-episodes-that-involve-dr-wong-deserve-more-appreciation-v0-o07po4hmdwma1.jpg?auto=webp&s=3ba9aa0e6898b6a614107365dd96602d6d7792df",
+      "id": 23
     }
   ]
 }

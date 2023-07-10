@@ -119,7 +119,7 @@ function submitForm(e) {
     let statusInput = document.getElementById('status').value;
     let speciesInput = document.getElementById('species').value;
     let typeInput = document.getElementById('type').value;
-    let genderInput = document.getElementsByClassName('gender').value;
+    let genderInput = document.getElementsByClassName('gender').checked;
     let originInput = document.getElementById('origin').value;
     let urlInput = document.getElementById('imageurl').value;
 
