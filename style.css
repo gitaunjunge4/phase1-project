@@ -150,5 +150,9 @@ body{
     color: white;
     border-radius: 30px;
     padding: 10px;
-    o
+}
+.inputFormData:hover{
+    box-shadow: 0 0 10px var(--green), 
+    0 0 25px var(--green);
+}
 }
