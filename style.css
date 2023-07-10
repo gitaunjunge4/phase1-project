@@ -71,6 +71,7 @@ body{
     text-align: left;
 }
 
+/* styles the character images */
 #displayedImage{
     border-radius: 20px;
     height: 50%;
@@ -78,6 +79,7 @@ body{
     width: 50%;
 }
 
+/* adding styling to rick and morty name */
 #rickandmorty{
     font-family: "Schoolbell", cursive;
     font-size: calc(3rem + 2.7vw);
@@ -143,7 +145,7 @@ body{
     0 0 25px var(--green);
 }
 
-/* styling the input */
+/* styling the input section */
 .inputFormData{
     border: 2px solid var(--green);
     background-color: #111;
@@ -154,5 +156,4 @@ body{
 .inputFormData:hover{
     box-shadow: 0 0 10px var(--green), 
     0 0 25px var(--green);
-}
 }
