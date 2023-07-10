@@ -49,6 +49,7 @@ function displayCharacterDetails(character){
 
         //displays Character Image
         let displayImage = document.createElement('img');
+            displayImage.classList = 'displayedDetailsChild';
             displayImage.id = 'displayedImage'
             displayImage.src = character.image
             displayDivMain.appendChild(displayImage)

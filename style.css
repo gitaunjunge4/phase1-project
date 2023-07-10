@@ -1,10 +1,10 @@
+/* adds the galaxy lookingimage to the background */
 body{
     background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.8)),
       var(--black) url(https://source.unsplash.com/RF4p4rTM-2s/1280x720) no-repeat
         center fixed;
     background-size: cover;
 }
-
 :root {
     --dark-cyan: #02b1c8;
     --cyan: #00e1ff;
@@ -16,6 +16,7 @@ body{
     --grey: #333;
   }
 
+  /* styles the header name */
 #header-id{
     margin: auto;
     text-align: center;
@@ -27,14 +28,20 @@ body{
     text-shadow: 0.02em 0.02em 0.02em var(--green), -0.02em -0.02em 0.02em var(--green), 0 0 0.2em var(--green);
 }
 
+/* styles the text in the <p> in the header*/
 #p1Header{
     background-image: linear-gradient(90deg, rgba(87,75,205,1) 0%, rgba(41,153,173,1) 35%, rgba(65,233,117,1) 100%);
     background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
-    
+    -moz-text-fill-color: transparent;   
+}
+
+/* styles the outer Div */
+#outerDiv{
+    display: flex;
+    justify-content: space-between;
 }
 
 #footer{
@@ -43,33 +50,31 @@ body{
     background-color: blueviolet;
 }
 
-.homepageSection{
-    font-size: 20px;
+#favCharacter{
+    font-size: 30px;
     color: #8bcf21;
-    text-align: left;
     font-family: "Press Start 2P",cursive;
-    flex-basis: 40%;
-    padding: 10px;
 }
 
 #character-details{
     color: blue;
     text-align: center;
+    font-size: x-large;
     flex-basis: 60%;
-}
-
-#outerDiv{
-    display: flex;
-    justify-content: space-between;
+    font-family: "Press Start 2P",cursive;
 }
 
 .displayedDetailsChild{
     color: pink;
+    font-size: large;
+    padding: 10px;
+    text-align: left;
 }
 
 #displayedImage{
     border-radius: 20px;
     height: 50%;
+    text-align: left;
     width: 50%;
 }
 
@@ -123,6 +128,7 @@ body{
 /* styling the addButton */
 #addButton{
     text-align: center;
+    font-family: 'montserrat';
     box-shadow:  0 0 10px var(--green), 
     0 0 25px var(--green) 0 0 50px var(--green),
     0 0 100px var(--green), 0 0 20px var(--green);
@@ -130,6 +136,7 @@ body{
     background-color: #7ffa67;
     padding: 10px;
     display: inline-block;
+    cursor: pointer;
 }
 #addButton:hover{
     box-shadow: 0 0 10px var(--green), 
