@@ -131,6 +131,7 @@ body{
 #addButton{
     text-align: center;
     font-family: 'montserrat';
+    font-size: 20px;
     box-shadow:  0 0 10px var(--green), 
     0 0 25px var(--green) 0 0 50px var(--green),
     0 0 100px var(--green), 0 0 20px var(--green);
@@ -138,6 +139,7 @@ body{
     background-color: #7ffa67;
     padding: 10px;
     cursor: pointer;
+    width: 100%;
 }
 #addButton:hover{
     box-shadow: 0 0 10px var(--green), 
@@ -151,49 +153,47 @@ body{
     color: white;
     border-radius: 30px;
     padding: 10px;
+    width: 100%;
+    font-size: 15px;
 }
+/* adding the hover feature */
 .inputFormData:hover{
     box-shadow: 0 0 10px var(--green), 
     0 0 25px var(--green);
     border: 2px solid var(--green);
 }
 
+.inputFormData::placeholder{
+    color: white;
+    font-size: 15px;
+    padding: 10px;
+    opacity: .7;
+}
 
-#unknown-gender{
-    border: 2px solid var(--green);
-}
-#unknown-gender:hover{
-    box-shadow: 0 0 10px var(--green), 
-    0 0 25px var(--green);
-}
-#female-gender{
-    border: 2px solid var(--green);
-}
-#female-gender:hover{
+/* adding the hover feature to the radio buttons */
+.gender:hover{
     box-shadow: 0 0 10px var(--green), 
     0 0 25px var(--green);
 }
 
 /* styling the add character form */
 #formP{
-    font-size: x-large;
+    font-size: 30px;
+    letter-spacing: 3px;
     text-align: center;
     font-family: 'Caprasimo', cursive;
-    
+    color: #39FF14;
+    text-shadow: 2px 2px #ff0000;
 }
-#name{
-    width: 100%;
-}
+
 
 #add-character{
     border-radius: 50px;
-    font-size: 30px;
+    font-size: 20px;
     margin-left: auto;
     margin-right: auto;
-    width: 25%;
+    width: 30%;
     font-weight: bold;
-    font-size: large;
-    justify-content: end;
     padding: 40px;
     background-color: #333;
 }
