@@ -137,7 +137,6 @@ body{
     font-weight: 500;
     background-color: #7ffa67;
     padding: 10px;
-    display: inline-block;
     cursor: pointer;
 }
 #addButton:hover{
@@ -156,4 +155,46 @@ body{
 .inputFormData:hover{
     box-shadow: 0 0 10px var(--green), 
     0 0 25px var(--green);
+    border: 2px solid var(--green);
 }
+
+
+#unknown-gender{
+    border: 2px solid var(--green);
+}
+#unknown-gender:hover{
+    box-shadow: 0 0 10px var(--green), 
+    0 0 25px var(--green);
+}
+#female-gender{
+    border: 2px solid var(--green);
+}
+#female-gender:hover{
+    box-shadow: 0 0 10px var(--green), 
+    0 0 25px var(--green);
+}
+
+/* styling the add character form */
+#formP{
+    font-size: x-large;
+    text-align: center;
+    font-family: 'Caprasimo', cursive;
+    
+}
+#name{
+    width: 100%;
+}
+
+#add-character{
+    border-radius: 50px;
+    font-size: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 25%;
+    font-weight: bold;
+    font-size: large;
+    justify-content: end;
+    padding: 40px;
+    background-color: #333;
+}
+

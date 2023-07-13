@@ -41,8 +41,8 @@ function fetchCharacterDetails(character){
 
 //function to display the details now
 function displayCharacterDetails(character){
-    let characaterDetails = document.getElementById('character-details');
-    characaterDetails.innerHTML = "<p id= 'sentence'>You selected!<p>";
+    let characterDetails = document.getElementById('character-details');
+    characterDetails.innerHTML = "<p id= 'sentence'>You selected!<p>";
 
         let displayDivMain = document.createElement('div');
         displayDivMain.classList = 'displayedDetailsMain';
@@ -52,6 +52,7 @@ function displayCharacterDetails(character){
             displayImage.classList = 'displayedDetailsChild';
             displayImage.id = 'displayedImage'
             displayImage.src = character.image
+            displayImage.alt = `${character.name}'s Image is here`
             displayDivMain.appendChild(displayImage)
 
         //displays Character name 
@@ -96,7 +97,7 @@ function displayCharacterDetails(character){
                 displayDivOrigin.innerText = `Origin: ${character.origin}`
                 displayDivMain.appendChild(displayDivOrigin); 
 
-    characaterDetails.appendChild(displayDivMain)
+    characterDetails.appendChild(displayDivMain)
 };
 
 
